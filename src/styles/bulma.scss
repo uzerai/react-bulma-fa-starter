@@ -1,0 +1,59 @@
+/*
+ *  A sass file for the configuration of Bulma.io and
+ *  the inclusion of custom CSS classes.
+ */
+
+
+// ERROR CONFIG
+$error-height: 15rem;
+$error-fade-time: 0.5s;
+$error-life-time: 2.5s; // This only represents the delay before we auto-hide the error again.
+
+
+@import '~bulma/bulma.sass';
+
+// ERROR
+.error-space {
+  margin-top: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  bottom: $error-height;
+}
+
+#error-bar {
+  visibility: hidden;
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  bottom: $error-height;
+}
+
+#error-bar.show {
+  visibility: visible; /* Show the errors */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein $error-fade-time, fadeout $error-fade-time $error-life-time;
+  animation: fadein $error-fade-time, fadeout $error-fade-time $error-life-time;
+}
+
+/* Animations to fade the error in and out */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: $error-height; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: $error-height; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: $error-height; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: $error-height; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+@import 'components/loading.scss';
