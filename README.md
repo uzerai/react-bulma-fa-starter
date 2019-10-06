@@ -6,11 +6,11 @@
         width="80" height="15" alt="WTFPL" /></a>
 </div>
 
-A simple repository for starting an ejected Create-React-App project with already-integrated [bulma](https://bulma.io)
+A simple repository for starting an ejected Create-React-App project with already-integrated [bulma](https://bulma.io/)
 and [font-awesome](https://fontawesome.com/) free edition.
 
 > **DISCLAIMER:**<p>
->  This project has a very niche audience; namely only myself (and those who I try to show [bulma](https://bulma.io) ).
+>  This project has a very niche audience; namely only myself (and those who I try to show [bulma](https://bulma.io/)).
   With that, I am not under any obligation to accept any requests submitted. I am however open to consider them if you have any.
 
 ## Getting Started
@@ -23,12 +23,12 @@ and the project will be running on `localhost:8080`.
 
 ### Prerequisites
 
-The project requires [docker](https://www.docker.com) and [docker-compose](https://docs.docker.com/compose/); npm not necessary as the build and running is
+The project requires [docker](https://www.docker.com/) and [docker-compose](https://docs.docker.com/compose/); npm not necessary as the build and running is
 containerized.
 
 ### Installing
 
-If you want to run the project locally (with no containerization); you'll need [npm](https://npm.org).
+If you want to run the project locally (with no containerization); you'll need [npm](https://www.npmjs.com/).
 
 To install all dependencies; run
 
@@ -48,9 +48,9 @@ the project should now be running at `localhost:3000`.
 
 ## Built With
 
-* [React](https://reactjs.org) - The web framework used
-* [Bulma.io](https://bulma.io) - UI/CSS Framework
-* [Fontawesome](https://fontawesome.com/) - UI Icons
+* [React](https://reactjs.org/) - The web framework used
+* [Bulma.io](https://bulma.io/) - UI/CSS Framework
+* [Fontawesome](https://fontawesome.com//) - UI Icons
 
 ## License
 
